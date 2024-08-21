@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "837113078123",
+    "project_id": "cakedeveliry",
+    "storage_bucket": "cakedeveliry.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837113078123:android:fd1ab496be574866fcec2e",
+        "android_client_info": {
+          "package_name": "com.example.cake"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcsI9Nvwgx1qqD_UGkzL_vOpR_9VcMk5s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

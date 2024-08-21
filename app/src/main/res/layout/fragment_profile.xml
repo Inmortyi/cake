@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- About Us Section -->
+        <TextView
+            android:id="@+id/about_us_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="О нас"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/about_us_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Мы - лучшая кондитерская, предлагающая широкий ассортимент тортов и выпечки на любой вкус."
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Pickup Address Section -->
+        <TextView
+            android:id="@+id/pickup_address_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Пункт выдачи"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/pickup_address_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ул. наб. Волжской Воен. флотилии, 27, Волгоград, Волгоградская обл."
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Custom Order Section -->
+        <TextView
+            android:id="@+id/custom_order_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Индивидуальный заказ"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/custom_order_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Мы принимаем индивидуальные заказы на любые мероприятия. Свяжитесь с нами для подробностей."
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Contact Us Section -->
+        <TextView
+            android:id="@+id/contact_us_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Связаться с нами"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/contact_us_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Телефон: +7 123 456 78 90\nEmail: info@example.com"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+
+    </LinearLayout>
+</ScrollView>

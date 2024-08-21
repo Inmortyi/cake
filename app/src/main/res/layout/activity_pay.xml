@@ -1,0 +1,166 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MAIN.CartFragment">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="279dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:elevation="2in"
+        android:outlineSpotShadowColor="@android:color/holo_red_light"
+        android:text="Оформление заказа"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pickupLocationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Пункт выдачи заказа:"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/pickupLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="ул. наб. \nВолжской Воен. флотилии,\n27, Волгоград, Волгоградская обл."
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/pickupLocationLabel"
+        app:layout_constraintTop_toBottomOf="@+id/pickupLocationLabel" />
+
+    <TextView
+        android:id="@+id/pickupTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Время получения заказа:"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/pickupLocation"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/pickupTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Следующий день после заказа\nс 9:00 до 18:00"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/pickupTimeLabel"
+        app:layout_constraintTop_toBottomOf="@id/pickupTimeLabel" />
+
+    <TextView
+        android:id="@+id/pay_achivment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Способ оплаты:"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/pickupTime"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Оплата совершается \nпереводом или наличными \nпосле получения заказа"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/pay_achivment"
+        app:layout_constraintTop_toBottomOf="@+id/pay_achivment" />
+
+    <TextView
+        android:id="@+id/orderItemsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Позиции в заказе:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/orderItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Здесь будут позиции заказа"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/orderItemsLabel"
+        app:layout_constraintTop_toBottomOf="@+id/orderItemsLabel" />
+
+    <TextView
+        android:id="@+id/totalPriceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Итоговая цена заказа:"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/orderItems"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/totalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="0 "
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/totalPriceLabel"
+        app:layout_constraintTop_toBottomOf="@+id/totalPriceLabel" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/proceed_order_btn"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/pink_btn"
+        android:elevation="8dp"
+        android:outlineAmbientShadowColor="@color/pinky"
+        android:outlineSpotShadowColor="@color/pinky"
+        android:shadowColor="@color/pinky"
+        android:text="Заказать"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₽"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/totalPrice"
+        app:layout_constraintStart_toEndOf="@+id/totalPrice"
+        app:layout_constraintTop_toTopOf="@+id/totalPrice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
